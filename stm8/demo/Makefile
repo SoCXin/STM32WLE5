@@ -8,7 +8,7 @@ OBJECTS=blinky.ihx uart.ihx
 all: $(OBJECTS)
 
 clean:
-	rm -f $(OBJECTS)
+	rm -f $(OBJECTS) *.asm *.sym *.rst *.rel *.map *.lst *.cdb *.lk
 
 flash: $(OBJECT).ihx
 	stm8flash -cstlink -pstm8l150 -w $(OBJECT).ihx
