@@ -1,0 +1,88 @@
+{
+    "name":"STM32WLE5",
+    "type":"SoC",
+    "Freq":"209MHz",
+    "vendor":"ST",
+    "Core":"Cortex-M4",
+    "description":"ST Cortex-M4 + Cortex-A7 SoC",
+    "homepage":"http://www.SoC.xin/STM32WLE5",
+    "keywords": [
+        "motor",
+        "ST",
+        "Cortex-M4",
+        "32-bit"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SoCXin/STM32WLE5.git"
+    },
+    "version":"1.0.0",
+    "series":["STM32WLE51","STM32WLE53","STM32WLE57"],
+    "package":["LFBGA448","LFBGA354","TFBGA361","TFBGA257"],
+    "STM32WLE51": {
+        "package":"LQFP128",
+        "RAM":160,
+        "ROM":512,
+        "peripheral": ["ADC","IIC","UART","SPI","LDO","PWM"]
+    },
+    "STM32WLE53": {
+        "package":"LQFP32",
+        "SRAM":4,
+        "Flash":32
+    },
+    "STM32WLE57": {
+        "package":"LQFP32",
+        "SRAM":4,
+        "Flash":32
+    },
+    "USART0": {
+        "LIN": 1,
+        "more":["BUAD","LIN","IrDA"]
+    },
+    "USART1": {
+        "LIN": 1,
+        "more":["BUAD","LIN","IrDA"]
+    },
+    "USART2": {
+        "LIN": 1,
+        "more":["BUAD","LIN","IrDA"]
+    },
+    "ADC": {
+        "num": 1,
+        "channel": 8,
+        "resolution": 12,
+        "rate": 2400
+    },
+    "IIC": {
+        "num": 1,
+        "channel": 8,
+        "resolution": 12,
+        "rate": 2400
+    },
+    "DMA": {
+        "num": 2,
+        "rate": 2400
+    },
+    "CMP": {
+        "num": 2,
+        "rate": 2400
+    },
+    "OPA": {
+        "num": 2,
+        "rate": 2400
+    },
+    "TIM": {
+        "resolution":[16,16,16],
+        "rate": 1024
+    },
+    "PWR": {
+        "VDD": [2700,5500],
+        "Ivdd": 3.5,
+        "rate": 1024
+    },
+    "PWM": {
+        "num": 2,
+        "resolution": 8,
+        "rate": 256
+    }
+}
